@@ -1,21 +1,30 @@
 Week 1
     Monday      Ice Breaker and explanation
+        Introductions to each other and the trainer, with a breakdown of course material
     Tuesday     Agile 
+        Breakdown of agile methodologies, SCRUM, Kanban and Waterfall
     Wednesday   Git
+        Install and explanation of Git bash, push, pull, add, commit and clone
     Thursday    Git + Network
+        Recap of Git bash and overview of networks and how they work
     Friday      Network + Security
+        Further information regarding networks and overview of security
 
 Week 2
     Monday      Security + Linux
+        Recap of security and introduction to Linux using JSLinux 
     Tuesday     Linux + Linux Scripting
+        Further lesson on Linux and bash scripting to automate instructions
     Wednesday   SSH + Database
+        How to connect to an online Dev environment through SSH and then introduction to SQL Database
     Thursday    Database Definition
+        More in depth information into the SQL Database and using query language
     Friday      Setting up a Python Dev Envrionment
+        Install of Python 3.* and Visual Code, testing the set up and checking Git is correctly linked.
 
 Week 3
-    Monday      Ice Breaker and explanation
-    Tuesday     Agile 
-    Wednesday   Git
-    Thursday    Git + Network
-    Friday      Network + Security
-    
+    Monday      
+    Tuesday      
+    Wednesday   
+    Thursday    
+    Friday          
