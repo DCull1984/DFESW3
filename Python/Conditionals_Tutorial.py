@@ -1,7 +1,7 @@
 
 ##Tutorial
 devs_money = 100
-dev_can_play_smash = False;
+dev_can_play_smash = False
 
 if devs_money > 10 and dev_can_play_smash: 
     print("Dev enters samsh tournament!")
