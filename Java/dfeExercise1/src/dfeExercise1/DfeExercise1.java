@@ -15,7 +15,7 @@ boolean amIHappy = false;
 			goodboy.play();
 		}
 		
-		int[] numList = {1,2,3,4,5,5,6}; //Create and initialise a list 
+		//int[] numList = {1,2,3,4,5,5,6}; //Create and initialise a list 
 		System.out.println("How are you? "); //Print out the value in the brackets
 		System.out.println("My " + name + " is doing great " + "How's yours? "); //same as above but concatenates variables
 		String num = "305"; //assign a value to the variable num
