@@ -24,6 +24,18 @@ public class Main {
 		//Stretch target, print out an object
 		Returns snake = new Returns();
 		System.out.println(snake);
+		
+		//Blank spacing
+		System.out.println();
+		
+		//Exercise for operator use
+		System.out.println(Calculator.addNum(3, 9));
+		System.out.println(Calculator.subtractNum(54, 18));
+		System.out.println(Calculator.multiplyNum(20, 15));
+		System.out.println(Calculator.divideNum(15, 3));
+		
+		//stretch goal for operator use, multiply to the power
+		System.out.println(Calculator.powerOfNum(2, 10));
 	}
 
 }

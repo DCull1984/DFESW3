@@ -1,5 +1,7 @@
 package com.qa.main;
 
+import java.lang.management.OperatingSystemMXBean;
+
 public class Main {
 
 	//main method is what runs
@@ -22,6 +24,13 @@ public class Main {
 		Returns.printHello();
 		System.out.println(Returns.returnHello());
 		System.out.println(Returns.returnNum());
+		
+		//Move balnk line spacing
+		System.out.println();
+		
+		System.out.println(Operator.addMethod());
+		System.out.println(Operator.divideMethod());
+		System.out.println(Operator.addNums(12, 84));
 	}
 
 	//New Method
