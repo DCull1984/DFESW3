@@ -36,6 +36,19 @@ public class Main {
 		
 		//stretch goal for operator use, multiply to the power
 		System.out.println(Calculator.powerOfNum(2, 10));
+		
+		//Blank spacing
+		System.out.println();
+		
+		//First part of dice exercise
+		System.out.println(DiceRoller.threeSidedDice());
+		System.out.println(DiceRoller.fourSidedDice());
+		System.out.println(DiceRoller.sixSidedDice());
+		System.out.println(DiceRoller.eightSidedDice());
+		System.out.println(DiceRoller.tenSidedDice());
+		
+		//Second part of dice exercise adding dice together
+		//System.out.println(DiceRoller.addSix(DiceRoller.sixSidedDice()));
 	}
 
 }
