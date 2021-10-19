@@ -1,7 +1,5 @@
 package com.qa.main;
 
-import java.lang.management.OperatingSystemMXBean;
-
 public class Main {
 
 	//main method is what runs
