@@ -29,7 +29,7 @@ boolean amIHappy = false;
 		float deci5 = 5.0f;
 		
 		System.out.println("H"+num3+"LL"+num0+", W"+num0+"rld! "+deci5+" "+amIHappy);
-
+		
 	}
 
 }
