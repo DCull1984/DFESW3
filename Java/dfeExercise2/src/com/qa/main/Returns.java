@@ -30,7 +30,7 @@ public class Returns {
 	public Returns() {
 		length = 8;
 		type = "Asp";
-		breed = " Snake";				
+		breed = "Snake";				
 	}
 	@Override
 	public String toString() {
