@@ -18,6 +18,10 @@ public class Main {
 		
 		//reference the class . the method
 		Demo.iAmFirst();
+		
+		Returns.printHello();
+		System.out.println(Returns.returnHello());
+		System.out.println(Returns.returnNum());
 	}
 
 	//New Method
