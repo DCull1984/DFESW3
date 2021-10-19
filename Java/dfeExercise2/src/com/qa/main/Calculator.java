@@ -19,7 +19,7 @@ public class Calculator {
 		return num1 / num2;
 	}
 	//Stretch goal multiply to the power of
-	public static double powerOfNum(int num1, int num2) {
-		return Math.pow(num1, num2);
+	public static int powerOfNum(int num1, int num2) {
+		return (int) Math.pow(num1, num2);
 	}
 }
