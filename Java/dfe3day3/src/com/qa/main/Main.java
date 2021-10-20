@@ -8,6 +8,8 @@ public class Main {
 		Conditionals.ifDemo();
 		System.out.println(Conditionals.numberStatement());
 		Conditionals.complexStatement();
+		
+		Iteration.basicDemo();
 	}
 
 }
