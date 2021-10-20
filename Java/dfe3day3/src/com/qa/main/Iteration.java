@@ -17,7 +17,7 @@ public class Iteration {
 	public static void basicDemo() {
 		int counter = 0;
 		
-		while(counter <= 20) {
+		while(counter <= 10) {
 			System.out.println("Counter Value: " + counter);
 			counter++; //without incrementation loop will run indefinitely
 		}
