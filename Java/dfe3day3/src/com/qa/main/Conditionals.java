@@ -41,4 +41,43 @@ public class Conditionals {
 		
 		
 	}
+	public static String numberStatement() {
+		
+		int x = 6;
+		
+		if(x > 10) {
+			return "Greater than 10";
+		}
+		else if (x == 10) {
+			return "Equal to 10";
+		}
+		else {
+			return "less than 10";
+		}
+		
+		//Always end an if block either with 
+		//else
+		//return (outside of the block)
+	}
+	
+	public static void complexStatement() {
+		
+		boolean bool = true;
+		String colour = "Red";
+		
+		if(bool == true || colour == "Red") {
+			System.out.println("bool is true OR colour is red");
+			
+			if (bool == true && colour == "Red") {
+				System.out.println("Bool AND Colour is true");
+			}
+			if(bool == true) {
+				System.out.println("bool is true");
+			}
+			if (colour == "Red") {
+				System.out.println("Colour is Red");
+			}
+			//else if will cause the program to terminate as else only returns if false
+		}
+	}
 }

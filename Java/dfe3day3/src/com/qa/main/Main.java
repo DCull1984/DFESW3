@@ -6,8 +6,8 @@ public class Main {
 		
 		//Remember to call -> class.method
 		Conditionals.ifDemo();
-		
-		
+		System.out.println(Conditionals.numberStatement());
+		Conditionals.complexStatement();
 	}
 
 }
