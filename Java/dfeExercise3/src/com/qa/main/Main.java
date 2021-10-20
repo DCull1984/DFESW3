@@ -14,6 +14,9 @@ public class Main {
 		
 		new FizzBuzz();
 		
+		System.out.println("**********************************************************************");
+		
+		System.out.println(UniqueNumber.totalSum(1, 1, 2));
 	}
 
 }
