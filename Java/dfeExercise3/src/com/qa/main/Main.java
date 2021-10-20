@@ -17,6 +17,10 @@ public class Main {
 		System.out.println("**********************************************************************");
 		
 		System.out.println(UniqueNumber.totalSum(1, 1, 2));
+		
+		System.out.println("**********************************************************************");
+		
+		Taxes.taxExercise(30000);
 	}
 
 }
