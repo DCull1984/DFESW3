@@ -24,6 +24,7 @@ public class Conditionals {
 		//set the testing value
 		int input = 200;
 		
+		//start of the character branch
 		if(input >= 2000) {
 			System.out.println("A");
 			
@@ -41,12 +42,14 @@ public class Conditionals {
 				}
 			}
 		}
+		//If the input is less than 2000 follow this branch instead
 		else {
+			//Start of the branch
 			System.out.println("1");
 		
 			if(input >= 100) {
 				System.out.println("3");
-			
+				
 				if(input >= 600) {
 					System.out.println("5");
 				}
