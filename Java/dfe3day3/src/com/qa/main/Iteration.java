@@ -38,4 +38,25 @@ public class Iteration {
 		}
 		while(counter < 3);
 	}
+	
+	public static void forLoop() {
+		//For loops primarily work with numerical values
+		//they will run for a set number of times, based on how they've been configured
+		
+		//for loops four components to configure
+		//initialisation (initial value)
+		//condition (what we're checking for)
+		//iteration (how we loop through the code)
+		//body (what we're looping)
+		
+		//For loop counting to 10
+		for(int index = 0; //initialisation - start from the value 0
+				index <= 10; //condition - do this while index is less than 10
+				index++ //Iterator -we're adding 1 to index after each iteration
+				) {
+			System.out.println("For loop count: " + index);
+		}
+		
+		
+	}
 }
