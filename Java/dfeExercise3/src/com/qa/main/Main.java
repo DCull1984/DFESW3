@@ -8,7 +8,7 @@ public class Main {
 		
 		System.out.println("**********************************************************************");
 		
-		System.out.println(BlackJack.blackJack(19, 17));
+		BlackJack.blackJack(21, 21);
 
 		System.out.println("**********************************************************************");
 		
