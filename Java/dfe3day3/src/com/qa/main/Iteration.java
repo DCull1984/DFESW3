@@ -23,4 +23,19 @@ public class Iteration {
 		}
 	}
 	
+	public static void doWhileDemo() {
+		int counter = 0;
+		
+		//will always run once, BEFORE checking condition
+		do {
+			if(counter == 0) {
+				System.out.println("first run");
+			}
+			else {
+				System.out.println("after initial run");
+			}
+			counter++;
+		}
+		while(counter < 3);
+	}
 }

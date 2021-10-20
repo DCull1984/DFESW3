@@ -10,6 +10,7 @@ public class Main {
 		Conditionals.complexStatement();
 		
 		Iteration.basicDemo();
+		Iteration.doWhileDemo();
 	}
 
 }
