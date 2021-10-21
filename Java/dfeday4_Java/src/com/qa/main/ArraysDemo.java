@@ -7,11 +7,11 @@ public class ArraysDemo {
 	
 	//arrays in Java = Train, can change customers getting on and off
 	//but you can't change the length of the train or type of cargo mid journey
-	
+	public static String[] colourList = {"blue", "purple", "teal", "cyan", "red"};
 	public static void arrayDemo() {
 		//when creating arrays you need to use [] to denote its an array
 		String colour = "green";
-		String[] colourList = {"blue", "purple", "teal", "cyan", "red"};
+		
 		
 		System.out.println(colour);
 		System.out.println("============================");
@@ -29,5 +29,13 @@ public class ArraysDemo {
 		colourList[1] = "moave";
 		System.out.println("=========================");
 		System.out.println(colourList[1]);
+	}
+	
+	public static void foreachArray() {
+		//for each string in the array colourList
+		//create a temp variable called colour that is equal to it
+		for(String colour : colourList) {
+			System.out.println(colour);
+		}
 	}
 }
