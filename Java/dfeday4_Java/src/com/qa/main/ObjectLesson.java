@@ -29,5 +29,6 @@ public class ObjectLesson {
 		return "flavour = " + flavour + ", size = " + size + "cm, isGlutenFree = " + isGlutenFree + ", colour = "
 				+ colour;
 	}
-
+	
+	
 }
