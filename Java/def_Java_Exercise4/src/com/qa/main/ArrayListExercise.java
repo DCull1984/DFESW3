@@ -82,11 +82,4 @@ public class ArrayListExercise {
 		doneOrders.clear();
 	}
 	
-	//stretch goal one
-	//make a multi dimensional array that takes in several values, size, name, extras
-	public static ArrayList<String> items = new ArrayList<>();
-	
-	public static void itemList() {
-		
-	}
 }
