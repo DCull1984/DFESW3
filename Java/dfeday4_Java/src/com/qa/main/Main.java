@@ -9,6 +9,12 @@ public class Main {
 		System.out.println();
 		
 		ArraysDemo.foreachArray();
+		
+		ArrayListDemo.setUpPizza();
+		ArrayListDemo.addPizza();
+		System.out.println(ArrayListDemo.getPizza(1));
+		ArrayListDemo.updatePizza(0);
+		ArrayListDemo.forLoopArrayList();
 	}
 
 }
