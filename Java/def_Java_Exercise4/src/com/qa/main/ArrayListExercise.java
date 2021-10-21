@@ -82,4 +82,11 @@ public class ArrayListExercise {
 		doneOrders.clear();
 	}
 	
+	public static void orderSize() {
+		orders.size();
+	}
+	
+	public static void doneOrderSize() {
+		doneOrders.size();
+	}
 }
