@@ -32,4 +32,7 @@ hs_err_pid*
 *.classpath
 
 #ignore settings folders
+
+#ignore git
+*.gitignore
 *.settings/
