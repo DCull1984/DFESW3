@@ -2,6 +2,7 @@ package com.qa.main;
 
 import java.util.ArrayList;
 
+import com.qa.garage.Garage;
 import com.qa.vehicle.Vehicle;
 
 public class Main {
@@ -23,6 +24,10 @@ public class Main {
 			System.out.println("Contents of the garage: " + i);
 		}
 		
-		
-		}
+//		Garage.addVehicle(trans);
+//		Garage.addVehicle(yam);
+//		Garage.addVehicle(daihatsu);
+//		
+//		Garage.getVehicle(0);		
+	}
 }
