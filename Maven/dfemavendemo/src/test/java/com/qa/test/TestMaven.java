@@ -1,4 +1,4 @@
-package dfemavendemo;
+package com.qa.test;
 
 import org.junit.Test;
 
