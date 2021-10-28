@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class MorseTransExercise {
 	
-	private final Map<String, String> MORSE_MAP;
+	private final HashMap<String, String> MORSE_MAP;
 
     public MorseTransExercise(){
         this.MORSE_MAP = new HashMap<>();
