@@ -35,7 +35,7 @@ public class PuppyController {
 	public ResponseEntity<Puppy> createPuppy(@RequestBody Puppy newPuppy) { //a puppy object in the request + response
 		this.puppies.add(newPuppy);
 		Puppy responseBody = this.puppies.get(this.puppies.size() - 1);
-		return new ResponseEntity<Puppy>(responseBody, HttpStatus.CREATED);
+		return new ResponseEntity<>(responseBody, HttpStatus.CREATED);
 	}
 
 	@GetMapping("/getAll") //get all information from the list/DB
@@ -51,13 +51,13 @@ public class PuppyController {
 	@PutMapping("/replace/{id}")
 	public ResponseEntity<Puppy> replacePuppy(@PathVariable Integer id, @RequestBody Puppy newPuppy) {
 		System.out.println("Replacing puppy with id: " + id + " with: " + newPuppy);
-		return new ResponseEntity<Puppy>(newPuppy, HttpStatus.ACCEPTED);
+		return new ResponseEntity<>(newPuppy, HttpStatus.ACCEPTED);
 	}
 	
 	@DeleteMapping("/remove/{id}")
 	public ResponseEntity<Puppy> removePuppy(@PathVariable Integer id) {
 		System.out.println("Removing puppy with id: " + id);
-		return new ResponseEntity<Puppy>(HttpStatus.NO_CONTENT);
+		return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 	}
 	
 }
