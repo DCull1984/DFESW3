@@ -49,9 +49,9 @@ public class PuppyController {
 	}
 	
 	@PutMapping("/replace/{id}")
-	public Puppy replacePuppy(@PathVariable Integer id, @RequestBody Puppy newPuppy) {
+	public ResponseEntity<Puppy> replacePuppy(@PathVariable Integer id, @RequestBody Puppy newPuppy) {
 		System.out.println("Replacing puppy with id: " + id + " with: " + newPuppy);
-		return null;
+		return new ResponseEntity<Puppy>(newPuppy, HttpStatus.ACCEPTED);
 	}
 	
 	@DeleteMapping("/remove/{id}")
