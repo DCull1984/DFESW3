@@ -3,9 +3,13 @@ package com.qa.puppies.rest;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -28,9 +32,10 @@ public class PuppyController {
 	}
 	
 	@PostMapping("/create") //triggered by a POST request to /create
-	public Puppy createPuppy(@RequestBody Puppy newPuppy) { //a puppy object in the request + response
+	public ResponseEntity<Puppy> createPuppy(@RequestBody Puppy newPuppy) { //a puppy object in the request + response
 		this.puppies.add(newPuppy);
-		return this.puppies.get(this.puppies.size() - 1);
+		Puppy responseBody = this.puppies.get(this.puppies.size() - 1);
+		return new ResponseEntity<Puppy>(responseBody, HttpStatus.CREATED);
 	}
 
 	@GetMapping("/getAll") //get all information from the list/DB
@@ -42,4 +47,17 @@ public class PuppyController {
 	public Puppy getPuppy(@PathVariable Integer id) {
 		return this.puppies.get(id);
 	}
+	
+	@PutMapping("/replace/{id}")
+	public Puppy replacePuppy(@PathVariable Integer id, @RequestBody Puppy newPuppy) {
+		System.out.println("Replacing puppy with id: " + id + " with: " + newPuppy);
+		return null;
+	}
+	
+	@DeleteMapping("/remove/{id}")
+	public ResponseEntity<Puppy> removePuppy(@PathVariable Integer id) {
+		System.out.println("Removing puppy with id: " + id);
+		return new ResponseEntity<Puppy>(HttpStatus.NO_CONTENT);
+	}
+	
 }
