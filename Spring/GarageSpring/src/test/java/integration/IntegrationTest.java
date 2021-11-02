@@ -24,21 +24,21 @@ import com.SpringGarage.Cull_David.GarageRepository.GarageRepository;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = {GarageSpringApplication.class})
 @AutoConfigureMockMvc
-public class IntegrationTest 
+public class IntegrationTest
 {
 	@Autowired
 	private MockMvc mvc;
-	
+
 	@Autowired
 	private GarageRepository testRepo;
-	
+
 	/*//This WILL wipe the DataBase
 	@Before
 	public void clearDB()
 	{
 		testRepo.deleteAll();
 	}*/
-	
+
 	@Test
 	public void findAndRetrieveVehicleFromDB()
 	throws Exception
@@ -51,7 +51,7 @@ public class IntegrationTest
 				.contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
 				.andExpect(jsonPath("$[0].make", is("Ford")));
 	}
-	
+
 	@Test
 	public void addVehicleToDB() throws Exception
 	{
@@ -74,7 +74,7 @@ public class IntegrationTest
 				.contentType(MediaType.APPLICATION_JSON)
 				.accept(MediaType.APPLICATION_JSON))
 				.andExpect(status().isBadRequest());
-				
+
 	}
 }
-	
+

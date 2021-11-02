@@ -21,23 +21,23 @@ import com.SpringGarage.Cull_David.GarageRepository.GarageRepository;
 
 @RestController
 @RequestMapping("/api")
-public class GarageController 
+public class GarageController
 {
 		@Autowired
 		GarageRepository garageStore;
-		
+
 		//Method to create a vehicle
 		@PostMapping("/vehicle")
 		public GarageDataModel createVehicle(@Valid @RequestBody GarageDataModel mVehicle)
 		{
 			return garageStore.save(mVehicle);
 		}
-		
+
 		//Method to get a vehicle
 		@GetMapping("/vehicle/{id}")
 		public GarageDataModel getVehiclebyID(@PathVariable(value = "id")Long mVehicleID)
 		{
-			return garageStore.findById(mVehicleID).orElseThrow(()-> 
+			return garageStore.findById(mVehicleID).orElseThrow(()->
 			new ResourceNotFoundException("GarageDataModel", "Type", mVehicleID));
 		}
 
@@ -46,52 +46,50 @@ public class GarageController
 		{
 			return garageStore.findByType(pType);
 		}
-	
+
 		//Method to get all vehicles
 		@GetMapping("/vehicle")
 		public List<GarageDataModel>getAllVehicle()
 		{
 			return garageStore.findAll();
 		}
-		
+
 		//Method to update a vehicle
 		@PutMapping("/vehicle/{id}")
 		public GarageDataModel updateGarage(@PathVariable(value = "id") Long mVehicleID,
 				@Valid @RequestBody GarageDataModel vehicleDetails)
 		{
-			GarageDataModel garage = garageStore.findById(mVehicleID).orElseThrow(()-> 
+			GarageDataModel garage = garageStore.findById(mVehicleID).orElseThrow(()->
 			new ResourceNotFoundException("Vehicle", "id", mVehicleID));
-			
+
 			garage.setType(vehicleDetails.getType());
 			garage.setMake(vehicleDetails.getMake());
 			garage.setModel(vehicleDetails.getModel());
 			garage.setColour(vehicleDetails.getColour());
 			garage.setEngineCapacity(vehicleDetails.getEngineCapacity());
-			
-			GarageDataModel updateData = garageStore.save(garage);
-			
-			return updateData;
+
+			return garageStore.save(garage);
 		}
-		
+
 		//Method to remove a vehicle
 		@DeleteMapping("/vehicle/{id}")
 		public ResponseEntity<?> deleteVehicle(@PathVariable(value = "id") Long mVehicleID)
 		{
 			GarageDataModel garage = garageStore.findById(mVehicleID).orElseThrow(()->
 			new ResourceNotFoundException("Vehicle", "id", mVehicleID));
-			
+
 			garageStore.delete(garage);
-			
+
 			return ResponseEntity.ok().build();
 		}
-		
+
 		/*@DeleteMapping("/vehicle/{make}")
 		public ResponseEntity<?> deleteByType(@PathVariable (value = "type")String pMake)
 		{
 			List<GarageDataModel> deleteByMake = garageStore.findByMake(pMake);
-			
+
 			garageStore.deleteAll(deleteByMake);
-			
+
 			return ResponseEntity.ok().build();
 		}*/
 }

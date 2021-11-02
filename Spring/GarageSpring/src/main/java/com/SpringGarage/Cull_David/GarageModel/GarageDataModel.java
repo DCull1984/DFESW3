@@ -26,51 +26,51 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(value = {"creationDate", "lastModified"}, allowGetters = true)
 public class GarageDataModel implements Serializable
 {
-		
+
 		@Id
 		@GeneratedValue(strategy = GenerationType.IDENTITY)
 		private long id;
-		
+
 		@NotBlank
 		private String type;
-		
+
 		@NotBlank
 		private String make;
-		
+
 		@NotBlank
 		private String model;
-		
+
 		@NotBlank
 		private String colour;
-		
+
 		private Integer engineCapacity;
-		
+
 		@Column(nullable = false, updatable = false)
 		@Temporal(TemporalType.TIMESTAMP)
 		@CreatedDate
 		private Date creationDate;
-		
+
 		@Column(nullable = false)
 		@Temporal(TemporalType.TIMESTAMP)
 		@LastModifiedDate
 		private Date lastModified;
-		
-		
+
+
 		public GarageDataModel()
 		{
-			
+
 		}
-		
-		public GarageDataModel(String pType, String pMake, String pModel, 
+
+		public GarageDataModel(String pType, String pMake, String pModel,
 				String pColour, Integer pEngineCapacity)
 		{
 			this.type = pType;
 			this.make = pMake;
 			this.model = pModel;
 			this.colour = pColour;
-			this.engineCapacity = pEngineCapacity;			
+			this.engineCapacity = pEngineCapacity;
 		}
-		
+
 		public long getId() {
 			return id;
 		}
@@ -134,8 +134,8 @@ public class GarageDataModel implements Serializable
 		public void setLastModified(Date lastModified) {
 			this.lastModified = lastModified;
 		}
-		
-		
-		
+
+
+
 }
 

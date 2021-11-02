@@ -13,6 +13,6 @@ public interface GarageRepository extends JpaRepository<GarageDataModel, Long>
 {
 	List<GarageDataModel> findByType(String pType);
 
-	
+
 
 }
