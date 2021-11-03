@@ -48,7 +48,7 @@ public class Puppy {
 
 	@Override
 	public String toString() {
-		return "Puppy [name=" + name + ", breed=" + breed + ", height=" + height + "]";
+		return "Puppy [name: " + name + ", breed: " + breed + ", height: " + height + "]";
 	}
 	
 }
