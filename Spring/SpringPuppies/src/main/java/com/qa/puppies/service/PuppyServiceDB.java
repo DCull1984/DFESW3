@@ -2,8 +2,11 @@ package com.qa.puppies.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.qa.puppies.domain.Puppy;
 
+@Service
 public class PuppyServiceDB implements PuppyService {
 
 	@Override
