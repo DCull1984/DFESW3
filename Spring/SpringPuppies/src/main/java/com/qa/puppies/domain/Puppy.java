@@ -9,8 +9,8 @@ public class Puppy {
 	public Puppy(String name, String breed, int height) {
 		super();
 		//Validation for the information submitted 
-		this.setName(name);
-		this.setBreed(breed);
+		this.name = name;
+		this.breed = breed;
 		this.setHeight(height);
 	}
 
@@ -45,4 +45,10 @@ public class Puppy {
 		else
 			System.out.println("Invalid height: " + height);
 	}
+
+	@Override
+	public String toString() {
+		return "Puppy [name=" + name + ", breed=" + breed + ", height=" + height + "]";
+	}
+	
 }
