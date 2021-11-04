@@ -78,7 +78,7 @@ Week 7
     Wednesday   Spring - API Dev Day 3
 		Dependency Injection overview, Inversion of Control (IOC), 
     Thursday    API Dev Day 4
-		Recap of IOC, Beans and Context.
+		Recap of IOC, Beans and Context. using mockito to build test cases.
     Friday 
 
 
