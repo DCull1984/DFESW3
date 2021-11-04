@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.qa.puppies.domain.Puppy;
 
 @Repository
-public class PuppyRepo extends JpaRepository<Puppy, Integer> {
+public interface PuppyRepo extends JpaRepository<Puppy, Integer> {
 
 }

@@ -15,13 +15,14 @@ public class PuppyServiceDB implements PuppyService {
 
 	private PuppyRepo repo;
 
+	public PuppyServiceDB(PuppyRepo repo) {
+		super();
+		this.repo = repo;
+	}
+
 	@Override
 	public Puppy createPuppy(Puppy newPuppy) {
 		return this.repo.save(newPuppy);
-	}
-
-	public void patchPuppy() {
-
 	}
 
 	@Override
@@ -32,7 +33,10 @@ public class PuppyServiceDB implements PuppyService {
 	@Override
 	public Puppy getPuppy(Integer id) {
 
-		Optional<Puppy> puppyOptional = this.repo.findByID(id);
+		// return this.repo.findById(id).orElseThrow(()-> new
+		// EntityNotFoundException("No puppy found with id: " + id));
+
+		Optional<Puppy> puppyOptional = this.repo.findById(id);
 
 		if (puppyOptional.isPresent()) {
 			Puppy puppy = puppyOptional.get();
